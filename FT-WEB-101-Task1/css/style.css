@@ -1,0 +1,122 @@
+:root {
+
+--bg: #e2e1e1;
+--text: #222222;
+
+--card: #afccf5;
+--border: #657d93;
+
+--dark-bg: #151515;
+--dark-text: #ffffff;
+
+--btn: #2563eb;
+--btn-text: #ffffff;
+
+--btn-toggle: #212836;
+
+
+
+}
+h1 {
+  margin-bottom: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-family: Times New Roman, serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bar{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.bar a{
+    margin-left: 12px;
+    color: var(--text);
+
+}
+img.profile-image {
+  width: 150px;
+  height: 150px;
+border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.cards{
+    display: flex;
+    gap: 30px;
+    
+}
+.card{ 
+    flex: 1;
+  padding: 32px;
+  background-color: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+}
+
+
+
+button {
+  padding: 10px 17px;
+  font-size: 16px;
+  font-family:inherit;
+
+  background-color: var(--btn   );
+  color: var(--btn-text );
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+form button{
+     align-self: flex-start;
+  margin-top: 12px;
+   }
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  
+  .card {
+    color: var(--text);
+  } 
+  .bar a{
+    color: var(--dark-text);
+  }
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   max-width: 300px;
+   margin: 20px 0;
+  
+}
+ #toggle {
+
+  margin-top: 20px;
+background-color: var(--btn-toggle);
+color: var(--btn-text);
+
+ }
